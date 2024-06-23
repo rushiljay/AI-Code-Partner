@@ -1,0 +1,101 @@
+CODER(1)                   User Commands                   CODER(1)
+
+NAME
+       coder - An advanced tool for automating and managing various
+       aspects of software development including testing, documentation,
+       continuous integration, and code quality.
+
+SYNOPSIS
+       coder [COMMAND]... [OPTIONS]...
+
+DESCRIPTION
+       coder is a versatile command-line utility designed to enhance
+       software development workflows by automating tasks such as
+       documentation generation, testing, environment setup, and code
+       quality control. It supports functionalities that increase
+       productivity and enforce coding standards.
+
+COMMANDS
+       init
+              Initialize a basic structure for a new Python project or
+              organize existing files into the recommended structure.
+              Creates docker base image.
+
+       setup
+              Manage development environments using Docker, ensuring
+              consistency across different setups.
+
+       docs [file_name] -t [template]
+              Generate documentation automatically for the entire
+              project or for a specified file if provided.
+
+       quality
+              Analyze and report on code quality and compliance with
+              coding standards using the integrated linter.
+
+       fix
+              Force fix all code issues, adhere to best practices,
+              apply robust type checking using Pydantic, and lint the
+              project.
+
+       test <file_name>
+              Create and edit test case files based on the contents of
+              the specified file.
+
+       develop <test_file_name>
+              Generate and adjust code based on the specified test file,
+              aiding in test-driven development.
+
+       format
+              Use Ruff to format the project, enforcing style and coding
+              conventions across all team extensions.
+
+       todos
+              Extract and organize TODO comments from the code files
+              into a manageable list.
+
+       commit
+              Commit staged files to version control with an auto-generated
+              or user-provided commit message.
+
+        run [file_name]
+              run code based on file through existing docker container
+
+       --help
+              Display detailed descriptions of commands and options.
+
+EXAMPLES
+       Initialize or organize a project:
+              coder init
+
+       Set up a Docker-based development environment:
+              coder setup
+
+       Generate project-wide documentation:
+              coder docs
+
+       Check and improve code quality:
+              coder quality
+
+       Automatically fix code to meet standards:
+              coder fix
+
+       Create or update tests for 'app.py':
+              coder test app.py
+
+       Develop code based on 'feature_tests.py':
+              coder develop feature_tests.py
+
+       Format the project code:
+              coder format
+
+       List and manage TODOs:
+              coder todos
+
+       Commit changes with a commit message:
+              coder commit -m "Update feature X"
+
+SEE ALSO
+       git(1), docker(1), pytest(1), pdoc(1), pydantic(1), ruff(1)
+
+CODER(1)
