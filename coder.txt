@@ -54,11 +54,22 @@ COMMANDS
               Extract and organize TODO comments from the code files
               into a manageable list.
 
+       create [file_name]
+              Create a file name, and a corresponding test file in
+              a parallel directory
+
+       chat
+              Initiate a chat interface to create files that follow
+              test-driven-development principles
+
+       model
+              choose what model should be running the code
+
        commit
               Commit staged files to version control with an auto-generated
               or user-provided commit message.
 
-        run [file_name]
+       run [file_name]
               run code based on file through existing docker container
 
        --help
