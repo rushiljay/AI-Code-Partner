@@ -100,7 +100,7 @@ def init():
     with open("./tests/__init__.py", "a") as f:
         f.write("")
     with open("./src/__init__.py", "a") as f:
-        f.write('\"""\n.. include:: ../README.md\n"""')
+        f.write('"""\n.. include:: ../README.md\n"""')
 
     # Create the env file
     with open("./src/.env", "a") as f:
