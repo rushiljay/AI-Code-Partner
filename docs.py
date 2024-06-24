@@ -2,6 +2,8 @@ import libcst as cst
 import ast
 import astor
 
+#TODO: use ollama to generate documentation
+
 
 class DocstringAdder(cst.CSTTransformer):
     """
@@ -69,6 +71,8 @@ def add_docstrings_to_files(input_file: str, output_file: str):
 
     # with open('modified_script.py', 'w') as file: # make sure to delete this file
     #     file.write(astor.to_source(tree))
+
+    # use above for file explainer, as well as docs generation for each function, use a hybrid approach between local and remote llm
 
 
 # Example usage
