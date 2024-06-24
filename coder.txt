@@ -58,6 +58,10 @@ COMMANDS
               Create a file name, and a corresponding test file in
               a parallel directory
 
+       check
+              Checks if file structure is maintained, and if test 
+              files exist
+
        chat
               Initiate a chat interface to create files that follow
               test-driven-development principles
